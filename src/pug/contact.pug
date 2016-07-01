@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Folio
+    link(rel="icon", type="image/png", href="img/favicon.ico")
+    link(rel="stylesheet", href="css/styles.min.css")
+  body
+    div.page-bg
+      // Page header
+      include includes/header
+      div.flex-row.wrap
+        div.container
+          main.flex-row.no-wrap
+            section.flex-col.no-wrap.section
+              header.section__header
+                h3 Contact Us
+              div.section__content
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem
+                form.js-contact-form
+                  input(type="text", placeholder="First name", required, autofocus).js-user-first-name
+                  input(type="text", placeholder="Last name", required).js-user-last-name
+                  input(type="email", placeholder="Email address", required).js-user-email
+                  textarea(placeholder="Message", required, spellcheck).js-user-message
+                  button(type="submit", disabled="disabled").btn.primary-btn.js-send-message Send
+            // Slideshow
+            include includes/slider
+        // Page footer
+        include includes/footer
+
+    script(src="js/common.min.js")
+    script(src="js/contact.min.js")

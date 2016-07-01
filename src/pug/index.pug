@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Folio
+    link(rel="icon", type="image/png", href="img/favicon.ico")
+    link(rel="stylesheet", href="css/styles.min.css")
+  body
+    div.page-bg
+      // Page header
+      include includes/header
+      div.flex-row.wrap
+        div.container
+          main.flex-row.no-wrap
+            section.section.home-page.flex-col.no-wrap
+              header.section__header.home-page
+                h1 Feauters
+                h2 Wedding Phorography Shoot
+            // Slideshow
+            include includes/slider
+        // Page footer
+        include includes/footer
+
+    script(src="js/common.min.js")
