@@ -13,6 +13,7 @@
       max-height: 180px;
       margin: 0 0 1.4rem;
       position: relative;
+      overflow: hidden;
 
       @media (max-width: $mobile) {
         width: 100%;

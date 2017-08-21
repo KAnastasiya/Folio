@@ -3,10 +3,14 @@
   flex-direction: column;
   width: 80%;
   max-width: $container-max-width;
-  min-height: calc(100% - var(--footer-height));
+  min-height: calc(100% - #{$footer-height});
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+
+  @supports ( (--footer--height: 0) ) {
+    min-height: calc(100% - var(--footer-height));
+  }
 
   @media (max-width: $tablet) {
     width: 95%;

@@ -85,14 +85,14 @@ const renderSlideCounter = (currentSLide) => {
  * Change current slide
  * @param  {Element}  slideParent  DOM-element, that is current slide parent
  */
-const changeCurrentSlide = (slideParent) => {
+const changeCurrentSlide = (slide, slideParent) => {
   const slidesList = document.querySelectorAll(`.${slider.item}`);
   for (let i = 0; i < slidesList.length; i++) {
     slidesList[i].children[0].removeAttribute(elementStateAttribute);
   }
   slideParent.children[0].setAttribute(elementStateAttribute, slider.currentItem);
   localStorage[slideInStorage] = slideParent.getAttribute(elementSlideNumAttribute) - 1;
-  setPageBackground(event.target.parentElement);
+  setPageBackground(slide.parentElement);
   setSlideCounter(slideParent, document.querySelector(`.${slider.itemCounterValue}`));
 };
 
@@ -114,7 +114,7 @@ const getSlideFromStorage = () => localStorage.getItem(slideInStorage);
 const onSlideClick = (event) => {
   const clickedSlideParent = event.target.parentElement;
   if (clickedSlideParent.classList.contains(slider.item)) {
-    changeCurrentSlide(clickedSlideParent);
+    changeCurrentSlide(event.target, clickedSlideParent);
   }
 };
 

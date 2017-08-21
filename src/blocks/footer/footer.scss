@@ -1,8 +1,12 @@
 .page-footer {
   display: flex;
-  height: var(--footer--height);
+  height: $footer-height;
   background-color: $color-white;
   position: relative;
+
+  @supports ( (--footer--height: 0) ) {
+    height: var(--footer--height);
+  }
 
   .container {
     flex-direction: row;

@@ -1,7 +1,11 @@
 .page-header {
   display: flex;
   align-items: stretch;
-  height: var(--header--height);
+  height: $header-height;
+
+  @supports ( (--header--height: 0) ) {
+    height: var(--header--height);
+  }
 
   &__logo {
     display: flex;

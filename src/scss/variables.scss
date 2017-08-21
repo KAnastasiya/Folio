@@ -14,9 +14,13 @@ $mobile:               34em; // 480px
 $tablet:               55em; // 768px
 $desktop:              73em; // 1024px
 
+$header-height:       150px;
+$footer-height:       60px;
+$main-margin-top:      85px;
+
 // CSS variables
 :root {
-  --header--height: 150px;
-  --footer--height: 60px;
-  --main-margin-top: 85px;
+  --header--height: $header-height;
+  --footer--height: $footer-height;
+  --main-margin-top: $main-margin-top;
 }
