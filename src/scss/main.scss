@@ -1,0 +1,34 @@
+main {
+  max-width: 70%;
+  min-height: calc(100vh - var(--header--height) - var(--footer--height) - var(--main-margin-top));
+  padding: 2.3rem 2.9rem;
+  margin-top: var(--main-margin-top);
+  background-color: $color-white;
+  opacity: 0.9;
+  position: relative;
+
+  @media (max-width: $desktop) {
+    max-width: 100%;
+  }
+
+  &::before {
+    $before-height: 2.3rem;
+
+    @include size(42px, $before-height);
+
+    content: '';
+    background: #fff url('img/down.png') center no-repeat;
+    position: absolute;
+    top: -$before-height;
+    right: 0;
+  }
+
+  &.home {
+    padding: 0;
+    background: transparent;
+
+    &::before {
+      display: none;
+    }
+  }
+}

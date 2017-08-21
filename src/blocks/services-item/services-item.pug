@@ -1,0 +1,7 @@
+mixin services-item(img, title, subtitle, text)
+  fiqure.services__item
+    img(src='img/services-item/img/' + img + '.png', alt=img)
+    figcaption
+      h4=title
+      h5=subtitle
+    p=text

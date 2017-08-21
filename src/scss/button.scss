@@ -1,0 +1,31 @@
+.btn {
+  @include font-size(13px, 20px);
+
+  color: $color-white;
+  font-weight: 700;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  padding: 0.9em 2.2em;
+  border: 0;
+  border-radius: 2px;
+  background-color: $color-primary;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
+  opacity: 1;
+  cursor: pointer;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid $color-primary;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}

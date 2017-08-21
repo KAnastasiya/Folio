@@ -1,0 +1,29 @@
+@import 'normalize';
+
+@import './scss/variables';
+@import './scss/mixins';
+
+@import './scss/fonts';
+@import './scss/typography';
+@import './scss/scaffolding';
+
+@import './scss/main';
+@import './scss/section';
+@import './scss/container';
+
+@import './scss/form';
+@import './scss/label';
+@import './scss/input';
+@import './scss/textarea';
+@import './scss/button';
+
+@import './blocks/header/header';
+@import './blocks/footer/footer';
+@import './blocks/slider/slider';
+@import './blocks/navigation/navigation';
+
+@import './blocks/services-item/services-item';
+
+@import './blocks/portfolio-item/portfolio-item';
+@import './blocks/portfolio-filter/portfolio-filter';
+@import './blocks/portfolio-filter/portfolio-pagination';

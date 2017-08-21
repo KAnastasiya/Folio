@@ -1,0 +1,24 @@
+extends pug/layout.pug
+
+block content
+  main
+    section.section.section--contact.contact
+      header.section__header
+        h2 Contact Us
+      .section__content
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem
+        form(method='POST', action='#').form.form--contact
+          .form__field
+            label(for='user-first-name') First name
+            input(type='text', placeholder='First name', required, autofocus).input.input--user-first-name#user-first-name
+          .form__field
+            label(for='user-last-name') Last name
+            input(type='text', placeholder='Last name', required).input.input--user-last-name#user-last-name
+          .form__field
+            label(for='user-email') Email address
+            input(type='email', placeholder='Email address', required).input.input--user-email#user-email
+          .form__field
+            label(for='user-message') Message
+            textarea(placeholder='Message', required, spellcheck).input.input--user-message#user-message
+          .form__controls
+            button(type='submit').btn.btn--send-message Send

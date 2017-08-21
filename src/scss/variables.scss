@@ -1,0 +1,22 @@
+$color-primary:        #86b11e;
+$color-white:          #fff;
+
+$font-size:            14px;
+$font-color:           #4c4c4c;
+
+$font-family--helvetica:    HelveticaNeue, Arial, sans-serif;
+$font-family--ostrich:      Ostrich, Arial, sans-serif;
+$font-family--pacifico:     Pacifico, Arial, sans-serif;
+
+$container-max-width:  1400px;
+
+$mobile:               34em; // 480px
+$tablet:               55em; // 768px
+$desktop:              73em; // 1024px
+
+// CSS variables
+:root {
+  --header--height: 150px;
+  --footer--height: 60px;
+  --main-margin-top: 85px;
+}

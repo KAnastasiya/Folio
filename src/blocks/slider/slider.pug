@@ -1,0 +1,10 @@
+mixin slider-item(num)
+  li(data-num=num, data-img='img/slider/img/bg/' + num + '.jpg').slider__item
+    img(src='img/slider/img/' + num + '.jpg', alt='').slider__img
+
+aside.slider
+  - var n = 1;
+    ul.slider__list
+      while n < 8
+        +slider-item(n++)
+

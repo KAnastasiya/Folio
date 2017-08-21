@@ -1,0 +1,11 @@
+mixin nav__item(href, text)
+  li.page-nav__item
+    a(href=href).page-nav__link=text
+
+nav.page-nav
+  ul.page-nav__list
+    +nav__item('index.html', 'Home')
+    +nav__item('about.html', 'About')
+    +nav__item('services.html', 'Services')
+    +nav__item('portfolio.html', 'Portfolio')
+    +nav__item('contact.html', 'Contact')

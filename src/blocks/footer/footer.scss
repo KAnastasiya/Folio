@@ -1,0 +1,40 @@
+.page-footer {
+  display: flex;
+  height: var(--footer--height);
+  background-color: $color-white;
+  position: relative;
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: auto;
+
+    @media (max-width: $desktop) {
+      flex-direction: column;
+    }
+  }
+
+  &::before {
+    $footer-progress-bar: 10px;
+
+    content: '';
+    width: 50%;
+    height: $footer-progress-bar;
+    background: #c8ccc0;
+    position: absolute;
+    top: -$footer-progress-bar;
+  }
+
+  &__text {
+    @include font-size(10px, 22px);
+
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 0;
+
+    @media (max-width: $desktop) {
+      display: none;
+    }
+  }
+}

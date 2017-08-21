@@ -1,0 +1,29 @@
+extends pug/layout.pug
+include blocks/portfolio-item/portfolio-item
+include blocks/portfolio-filter/portfolio-filter
+
+block content
+  main
+    section.section.section--portfolio.portfolio
+      header.section__header
+        h2 Portfolio
+        +portfolio-filter(
+          'All',
+          'Wedding',
+          'Landscape',
+          'Portrait',
+          'Events'
+        )
+      .section__content.portfolio__content
+        +portfolio-item('1')
+        +portfolio-item('2')
+        +portfolio-item('3')
+        +portfolio-item('4')
+        +portfolio-item('5')
+        +portfolio-item('6')
+        +portfolio-item('7')
+        +portfolio-item('8')
+        +portfolio-item('9')
+        +portfolio-item('10')
+        +portfolio-item('11')
+        +portfolio-item('12')

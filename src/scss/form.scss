@@ -1,0 +1,13 @@
+.form {
+  width: 100%;
+
+  &__field {
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__controls {
+    margin-top: 1rem;
+  }
+}

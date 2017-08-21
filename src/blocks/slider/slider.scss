@@ -1,0 +1,55 @@
+.slider {
+  padding: 1.4rem 1.4rem 0;
+  background-color: $color-white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  @media (max-width: $desktop) {
+    display: none;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:first-of-type) {
+      margin-top: 1.4rem;
+    }
+  }
+
+  &__img {
+    @include size(160px, 125px);
+
+    opacity: 0.6;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus,
+    &[data-state='is-active'] {
+      outline: 2px solid $color-primary;
+      outline-offset: 3px;
+      opacity: 1;
+    }
+  }
+
+  &__counter {
+    @include font-size(12px 22px);
+
+    color: #4c4c4c;
+    font-weight: 500;
+    padding-bottom: 1.4rem;
+    position: relative;
+  }
+
+  &__counter-value {
+    position: absolute;
+    right: 0;
+  }
+}

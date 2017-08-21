@@ -1,0 +1,37 @@
+.portfolio-filters {
+  @media (max-width: $tablet) {
+    margin-top: 0.7rem;
+  }
+
+  &__list {
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 4px 0;
+
+    &:not(:last-of-type) {
+      border-right: 2px solid $font-color;
+    }
+  }
+
+  &__link {
+    @include font-size(18px, 22px);
+
+    color: inherit;
+    font-family: $font-family--ostrich;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 0.6em;
+    cursor: pointer;
+
+    &[data-state='is-active'] {
+      color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.section {
+  &:not(:first-of-type) {
+    margin-top: 50px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}

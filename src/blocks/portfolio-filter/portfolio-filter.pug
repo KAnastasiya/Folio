@@ -1,0 +1,6 @@
+mixin portfolio-filter(...items)
+  nav.portfolio-filters
+    ul.portfolio-filters__list
+      each item in items
+        li(data-name=item).portfolio-filters__item
+          a(href='#').portfolio-filters__link=item

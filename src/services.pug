@@ -1,0 +1,39 @@
+extends pug/layout.pug
+include blocks/services-item/services-item
+
+block content
+  main
+    section.section.section--services.services
+      header.section__header
+        h2 Services
+      p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem
+      .section__content
+        +services-item(
+          'photo',
+          'Photography bundle',
+          'The Professional Bundle For Your Business',
+          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+        )
+        +services-item(
+          'basket',
+          'Wedding bundle',
+          'The Professional Bundle For Your Wedding',
+          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+        )
+        +services-item(
+          'settings',
+          'Development bundle',
+          'The Bundle With All The Goodies For Your Website',
+          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+        )
+        +services-item(
+          'person',
+          'Social Media bundle',
+          'Help Deck Out Your Social Media Profiles',
+          'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+        )
+    section.section.section--testimonials.testimonials
+      header.section-header
+        h2 Testimonials
+      .section-content
+        blockquote Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus
